@@ -6,8 +6,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 import com.philips.constants.EnvironmentConstants.StringConstants;
+import com.philips.interfaces.IFileValidator;
 
-public class FileValidator {
+public class FileValidator implements IFileValidator {
 	private String contentType;
 	private File file;
 	
@@ -16,7 +17,8 @@ public class FileValidator {
 		this.file = new File(filePath);
 		this.contentType = contentType;
 	}
-
+	
+	@Override
 	public boolean checkFormat() {
 		Path filePath;
 		String verifyContentType = StringConstants.EMPTY.get();
@@ -31,6 +33,7 @@ public class FileValidator {
 		return false;
 	}
 
+	@Override
 	public boolean fileExists() {
 		return file.exists();
 	}

@@ -6,7 +6,10 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class FileOperations {
+import com.philips.constants.EnvironmentConstants.StringConstants;
+import com.philips.interfaces.IFileOperations;
+
+public class FileOperations implements IFileOperations {
 	
 	private String filePath;
 	
@@ -14,6 +17,7 @@ public class FileOperations {
 		this.filePath = filePath;
 	}
 	
+	@Override
 	public BufferedReader openReaderStream() 
 	{
 		try {
@@ -25,6 +29,7 @@ public class FileOperations {
 		return null;
 	}
 
+	@Override
 	public FileWriter openWriterStream() 
 	{
 		try {
@@ -36,18 +41,25 @@ public class FileOperations {
 		return null;
 	}
 	
-	public void readFile(BufferedReader reader) 
+	@Override
+	public String readFile(BufferedReader reader) 
 	{
-		try {
+		String content = StringConstants.EMPTY.get();
+		try {			
 			String line;
 			line = reader.readLine();
-			while (line != null)				
-				line = reader.readLine();				
+			while (line != null) {
+				content+=line;
+				line = reader.readLine();
+			}
 		} catch(IOException exception) {
 			exception.printStackTrace();
 		}
+		return content;
 	}
 	
+	
+	@Override
 	public void appendFile(FileWriter writer, String record) 
 	{
 		try {
@@ -58,6 +70,7 @@ public class FileOperations {
 		}
 	}
 	
+	@Override
 	public void writeFile(FileWriter writer, String record) 
 	{
 		try {
@@ -68,6 +81,7 @@ public class FileOperations {
 		}
 	}
 	
+	@Override
 	public void closeReader(BufferedReader reader)
 	{
 		try {
@@ -77,6 +91,7 @@ public class FileOperations {
 		}
 	}
 	
+	@Override
 	public void closeWriter(FileWriter writer)
 	{
 		try {

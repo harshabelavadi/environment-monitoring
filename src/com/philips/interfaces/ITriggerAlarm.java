@@ -1,4 +1,4 @@
-package com.philips.interfaces.common;
+package com.philips.interfaces;
 
 public interface ITriggerAlarm {
 	void trigger(String parameterName, Double value);

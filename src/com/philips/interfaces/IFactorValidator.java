@@ -1,4 +1,4 @@
-package com.philips.interfaces.common;
+package com.philips.interfaces;
 
 public interface IFactorValidator {
 	boolean isParameterInRange(String parameterName, Double value);

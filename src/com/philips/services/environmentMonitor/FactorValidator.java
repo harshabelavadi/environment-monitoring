@@ -5,8 +5,8 @@ import java.util.Date;
 import com.philips.constants.EnvironmentConstants.FactorConstants;
 import com.philips.constants.EnvironmentConstants.LogMessageConstants;
 import com.philips.constants.EnvironmentConstants.StringConstants;
-import com.philips.interfaces.common.IFactorValidator;
-import com.philips.interfaces.common.ILogger;
+import com.philips.interfaces.IFactorValidator;
+import com.philips.interfaces.ILogger;
 
 public class FactorValidator implements IFactorValidator {
 	private final String receiverLogsPath = StringConstants.RECEIVERLOGSPATH.get();

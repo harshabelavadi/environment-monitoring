@@ -8,7 +8,9 @@ public class Sender {
 	
 	public static void main(String[] args)
 	{
-		new MonitorEnvironmentCondition(StringConstants.CSVFILEPATH.get(), StringConstants.CSV.get(), 
-				LogMessageConstants.CSVFILEFORMATERROR.get()).monitor();
+		new MonitorEnvironmentCondition(StringConstants.CSVFILEPATH.get(),
+										StringConstants.CSV.get(), 
+										LogMessageConstants.CSVFILEFORMATERROR.get())
+										.monitor();
 	}
 }

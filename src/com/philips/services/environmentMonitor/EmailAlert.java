@@ -2,7 +2,7 @@ package com.philips.services.environmentMonitor;
 
 import java.util.Date;
 
-import com.philips.interfaces.common.IAlert;
+import com.philips.interfaces.IAlert;
 
 public class EmailAlert implements IAlert {
 

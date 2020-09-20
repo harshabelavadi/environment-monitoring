@@ -5,8 +5,8 @@ import java.util.Date;
 import com.philips.constants.EnvironmentConstants.FactorConstants;
 import com.philips.constants.EnvironmentConstants.LogMessageConstants;
 import com.philips.constants.EnvironmentConstants.StringConstants;
-import com.philips.interfaces.common.ILogger;
-import com.philips.interfaces.common.ITriggerAlarm;
+import com.philips.interfaces.ILogger;
+import com.philips.interfaces.ITriggerAlarm;
 
 public class TriggerAlarm implements ITriggerAlarm {
 

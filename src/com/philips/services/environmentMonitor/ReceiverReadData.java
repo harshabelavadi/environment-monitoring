@@ -6,12 +6,14 @@ import java.io.IOException;
 import com.philips.constants.EnvironmentConstants.LogMessageConstants;
 import com.philips.constants.EnvironmentConstants.NumberConstants;
 import com.philips.constants.EnvironmentConstants.StringConstants;
-import com.philips.interfaces.common.ILogger;
+import com.philips.interfaces.IFileOperations;
+import com.philips.interfaces.IFileValidator;
+import com.philips.interfaces.ILogger;
 import com.philips.services.fileHandler.FileOperations;
 import com.philips.services.fileHandler.FileValidator;
 
-public class FetchData {
-	
+public class ReceiverReadData {
+
 	private final String receiverInputPath = StringConstants.RECEIVERINPUTPATH.get();
 	private final String receiverLogsPath = StringConstants.RECEIVERLOGSPATH.get();
 	private final String waitingForSender = LogMessageConstants.WAITFORSENDER.get();
@@ -20,14 +22,14 @@ public class FetchData {
 	
 	private ProcessSenderData processData = new ProcessSenderData();
 	
-	private FileOperations fileOperations;
-	private FileValidator fileValidate;
+	private IFileOperations fileOperations;
+	private IFileValidator fileValidate;
 	private ILogger receiverLogger;
 	private String receivedData;
 	private BufferedReader reader;
 	private int waitLimit; 
 	
-	public FetchData() {
+	public ReceiverReadData() {
 		try {
 			
 			fileOperations = new FileOperations(receiverInputPath);
@@ -52,7 +54,7 @@ public class FetchData {
 					setReceivedData(reader.readLine());
 					setWaitLimit(waitLimit + milliseconds);
 					
-					if (waitLimit == NumberConstants.TIMEOUT.get()) {
+					if (waitLimit >= NumberConstants.TIMEOUT.get()) {
 						System.out.println(LogMessageConstants.TIMEOUT.get());
 						fileOperations.closeReader(reader);
 						return;

@@ -7,7 +7,8 @@ import com.philips.constants.EnvironmentConstants.FactorConstants;
 import com.philips.constants.EnvironmentConstants.LogMessageConstants;
 import com.philips.constants.EnvironmentConstants.NumberConstants;
 import com.philips.constants.EnvironmentConstants.StringConstants;
-import com.philips.interfaces.common.ILogger;
+import com.philips.interfaces.IFileValidator;
+import com.philips.interfaces.ILogger;
 import com.philips.services.fileHandler.FileValidator;
 
 public class MonitorEnvironmentCondition {
@@ -30,7 +31,7 @@ public class MonitorEnvironmentCondition {
 	private ILogger environmentConditionLogger;
 	private ILogger addRecordToInputFile;
 	private ILogger sendRecordToReceiverInput;
-	private FileValidator fileValidate;
+	private IFileValidator fileValidate;
 
 	private String filePath;
 	private String contentType;
@@ -60,9 +61,9 @@ public class MonitorEnvironmentCondition {
 			}			
 			sleep(milliseconds);
 			generateRecord();
-			addRecordToInputFile.invokeWriteOperationToFile(record);
+			addRecordToInputFile.invokeAppendOperationToFile(record);
 			environmentConditionLogger.logger(String.format(generatedRecordMessage, new Date().toString(), temperature, humidity));
-			sendRecordToReceiverInput.invokeWriteOperationToFile(record);
+			sendRecordToReceiverInput.invokeAppendOperationToFile(record);
 		}
 	}
 	

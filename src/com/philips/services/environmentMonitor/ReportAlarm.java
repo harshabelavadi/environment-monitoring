@@ -1,6 +1,6 @@
 package com.philips.services.environmentMonitor;
 
-import com.philips.interfaces.common.IAlert;
+import com.philips.interfaces.IAlert;
 
 public class ReportAlarm {
 
