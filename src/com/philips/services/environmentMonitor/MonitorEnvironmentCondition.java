@@ -11,11 +11,17 @@ import com.philips.interfaces.IFileValidator;
 import com.philips.interfaces.ILogger;
 import com.philips.services.fileHandler.FileValidator;
 
+
+/**
+ * This MonitorEnvironmentCondition class
+ * is to generate Environment condition records, monitoring them by calling loggers	 
+ */
+
 public class MonitorEnvironmentCondition {
-	private final int temperatureMax = NumberConstants.TEMPERATURE_MAX.get();
-	private final int temperatureMin = NumberConstants.TEMPERATURE_MIN.get();
-	private final int humidityMax = NumberConstants.HUMIDITY_MAX.get();
-	private final int humidityMin = NumberConstants.HUMIDITY_MIN.get();
+	private final int temperatureMax = NumberConstants.TEMPERATURE_MAX_TOGENERATE_RAND.get();
+	private final int temperatureMin = NumberConstants.TEMPERATURE_MIN_TOGENERATE_RAND.get();
+	private final int humidityMax = NumberConstants.HUMIDITY_MAX_TOGENERATE_RAND.get();
+	private final int humidityMin = NumberConstants.HUMIDITY_MIN_TOGENERATE_RAND.get();
 	private final int milliseconds = NumberConstants.MILLISECONDS.get();
 	
 	private final String commaString = StringConstants.COMMA.get();
@@ -45,6 +51,7 @@ public class MonitorEnvironmentCondition {
 		this.filePath = filePath;
 		this.contentType = contentType;
 		this.fileFormatErrorMessage = fileFormatErrorMessage;
+		
 	}
 	
 	public void monitor()
@@ -59,11 +66,13 @@ public class MonitorEnvironmentCondition {
 				environmentConditionLogger.logger(fileFormatErrorMessage);
 				return;
 			}			
-			sleep(milliseconds);
+			sleep(milliseconds); 
 			generateRecord();
 			addRecordToInputFile.invokeAppendOperationToFile(record);
-			environmentConditionLogger.logger(String.format(generatedRecordMessage, new Date().toString(), temperature, humidity));
-			sendRecordToReceiverInput.invokeAppendOperationToFile(record);
+			environmentConditionLogger.logger(String.format(generatedRecordMessage, new Date().toString(), temperature, humidity)); 
+			sendRecordToReceiverInput.invokeAppendOperationToFile(record); 
+				
+			
 		}
 	}
 	

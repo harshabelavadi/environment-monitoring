@@ -29,6 +29,15 @@ public class ReceiverReadData {
 	private BufferedReader reader;
 	private int waitLimit; 
 	
+	/**
+	 * This ReceiverReadData class
+	 * is to initially validate file and wait for sender to create if it doesn't exist  
+	 * wait for sender to generate a record for reading
+	 * wait has been set to predefined milliseconds in the constant file 
+	 * and Terminate after the breach in predefined wait limit
+	 */
+
+	
 	public ReceiverReadData() {
 		try {
 			
@@ -38,7 +47,7 @@ public class ReceiverReadData {
 			
 			if (!fileValidate.fileExists()) {
 				receiverLogger.logger(waitingForSender);
-				Thread.sleep(milliseconds);
+				Thread.sleep(milliseconds); 
 			} 
 			
 			reader = fileOperations.openReaderStream();
@@ -52,7 +61,7 @@ public class ReceiverReadData {
 					receiverLogger.logger(waitingForSender);
 					Thread.sleep(receiverWait);
 					setReceivedData(reader.readLine());
-					setWaitLimit(waitLimit + milliseconds);
+					setWaitLimit(waitLimit + receiverWait);
 					
 					if (waitLimit >= NumberConstants.TIMEOUT.get()) {
 						System.out.println(LogMessageConstants.TIMEOUT.get());

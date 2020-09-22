@@ -8,6 +8,7 @@ import com.philips.constants.EnvironmentConstants.StringConstants;
 import com.philips.interfaces.IFactorValidator;
 import com.philips.interfaces.ILogger;
 
+
 public class FactorValidator implements IFactorValidator {
 	private final String receiverLogsPath = StringConstants.RECEIVERLOGSPATH.get();
 	private final String normalCondition = LogMessageConstants.NORMALCONDITION.get();
@@ -27,7 +28,7 @@ public class FactorValidator implements IFactorValidator {
 	public boolean isParameterInRange(String parameterName, Double value) {
 		environmentConditionLogger = new Logger(receiverLogsPath);
 		if (parameterName.equals(temperatureParamName))
-			return isTemperatureInRange(value);
+			return isTemperatureInRange(value); //this is a boolean but why is it returning value
 		return isHumidityInRange(value);
 	}
 

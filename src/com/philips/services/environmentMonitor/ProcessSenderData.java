@@ -1,7 +1,14 @@
 package com.philips.services.environmentMonitor;
 
 import com.philips.constants.EnvironmentConstants.NumberConstants;
+
 import com.philips.constants.EnvironmentConstants.StringConstants;
+/**
+ * This ProcessSenderData class
+ * is to process the received data from sender's output  
+ * by invoking FactorValidator object to check in range
+ * and triggering triggerAlarm object if breach occured
+ */
 
 public class ProcessSenderData {
 	private FactorValidator checkCondition = new FactorValidator();

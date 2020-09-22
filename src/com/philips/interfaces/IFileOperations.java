@@ -3,6 +3,11 @@ package com.philips.interfaces;
 import java.io.BufferedReader;
 import java.io.FileWriter;
 
+/**
+ * This IFileOperations interface
+ * is used to perform various file handler operations
+ 	 
+ */
 public interface IFileOperations {
 	public BufferedReader openReaderStream();
 	public FileWriter openWriterStream();

@@ -1,5 +1,9 @@
 package com.philips.constants;
-
+/**
+ * This EnvironmentConstants
+ * is to avoid the usage of hard coded values in the project
+ 	 
+ */
 public class EnvironmentConstants {
 	
 	public enum StringConstants
@@ -21,7 +25,11 @@ public class EnvironmentConstants {
 			return this.stringConstant;
 		}
 	}
-	
+	/**
+	 * This LogMessageConstants
+	 * has the constants used in writing to logger files 
+	 	 
+	 */
 	public enum LogMessageConstants
 	{
 		CSVFILEFORMATERROR("File format is incorrect: Please create a new csv file\n"),
@@ -51,11 +59,16 @@ public class EnvironmentConstants {
 			return this.logMessage;
 		}
 	}
-	
+	/**
+	 * This NumberConstants
+	 * has the constant numbers to make threads sleep, limits for range generation and array indexing 
+	 	 
+	 */
 	public enum NumberConstants 
 	{
-		ZERO(0), ONE(1), MILLISECONDS(5000), TEMPERATURE_MAX(60), RECEIVERWAIT(2500),
-		HUMIDITY_MAX(40), TEMPERATURE_MIN(15), HUMIDITY_MIN(10), TIMEOUT(60000);
+		ZERO(0), ONE(1), MILLISECONDS(5000), TEMPERATURE_MAX_TOGENERATE_RAND(60), RECEIVERWAIT(2500),
+		HUMIDITY_MAX_TOGENERATE_RAND(40), TEMPERATURE_MIN_TOGENERATE_RAND(0), 
+		HUMIDITY_MIN_TOGENERATE_RAND(10), TIMEOUT(60000);
 		
 		private final int number;
 		private NumberConstants(final int number)
@@ -68,7 +81,11 @@ public class EnvironmentConstants {
 			return this.number;
 		}
 	}
-	
+	/**
+	 * This FactorConstants
+	 * has the maximum and minimum limits for Error and Warning conditions and scale the value to desired precisions 
+	 	 
+	 */
 	public enum FactorConstants 
 	{
 		TEMPERATURE_WARNLOW(8.0), TEMPERATURE_WARNHIGH(45.0), TEMPERATURE_ERRORLOW(5.0), TEMPERATURE_ERRORHIGH(50.0),

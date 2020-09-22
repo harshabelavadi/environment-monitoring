@@ -2,6 +2,11 @@ package com.philips.services.environmentMonitor;
 
 import com.philips.interfaces.IAlert;
 
+/**
+ * This ReportAlarm class
+ * is to invoke either an emailAlert or SMSAlert based on the object received
+
+ */
 public class ReportAlarm {
 
 	private IAlert sendAlert;
