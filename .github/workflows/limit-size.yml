@@ -2,9 +2,9 @@ name: Limit complexity
 
 on:
   push:
-    branches: [ master,anaghesh ]
+    branches: [ master,harsha ]
   pull_request:
-    branches: [ master,anaghesh ]
+    branches: [ master,harsha ]
 
 jobs:
   build:
