@@ -1,4 +1,4 @@
-package com.philips.test.environmentMonitor;
+package com.philips.environmentMonitor;
 
 import static org.junit.Assert.*;
 

@@ -2,7 +2,6 @@ C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\mai
 C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\main\java\com\philips\services\environmentMonitor\Logger.java
 C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\main\java\com\philips\services\fileHandler\FileValidator.java
 C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\main\java\com\philips\interfaces\IFactorValidator.java
-C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\test\java\com\philips\test\environmentMonitor\TriggerAlarmTest.java
 C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\main\java\com\philips\services\environmentMonitor\FactorValidator.java
 C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\main\java\com\philips\services\environmentMonitor\SMSAlert.java
 C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\main\java\com\philips\constants\EnvironmentConstants.java
@@ -12,11 +11,12 @@ C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\mai
 C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\main\java\com\philips\services\environmentMonitor\ProcessSenderData.java
 C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\main\java\com\philips\services\environmentMonitor\MonitorEnvironmentCondition.java
 C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\main\java\com\philips\interfaces\IFileValidator.java
-C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\test\java\com\philips\test\environmentMonitor\ProcessSenderDataTest.java
 C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\main\java\com\philips\services\environmentMonitor\TriggerAlarm.java
 C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\main\java\com\philips\receiver\Receiver.java
 C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\main\java\com\philips\interfaces\IAlert.java
 C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\main\java\com\philips\services\environmentMonitor\ReportAlarm.java
+C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\test\java\com\philips\environmentMonitor\TriggerAlarmTest.java
 C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\main\java\com\philips\interfaces\ITriggerAlarm.java
 C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\main\java\com\philips\interfaces\IFileOperations.java
 C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\main\java\com\philips\interfaces\ILogger.java
+C:\Training and Assignments\Bootcamp\Case Study 1\environment-monitoring\src\test\java\com\philips\environmentMonitor\ProcessSenderDataTest.java
