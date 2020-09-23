@@ -58,3 +58,11 @@ Temperature,14.241
 Humidity,56.165
 Temperature,19.326
 Humidity,62.327
+Temperature,48.563
+Humidity,0.171
+Temperature,43.527
+Humidity,87.39
+Temperature,47.041
+Humidity,0.117
+Temperature,20.019
+Humidity,68.643

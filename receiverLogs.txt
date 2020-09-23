@@ -57,3 +57,37 @@ Record recieved at : Wed Sep 23 22:00:44 IST 2020, Temperature : 43.52, Conditio
 Record recieved at : Wed Sep 23 22:00:46 IST 2020, Humidity : 20.137, Condition : WARNING!
 Record recieved at : Wed Sep 23 22:00:49 IST 2020, Temperature : 14.241, Condition : Normal
 Record recieved at : Wed Sep 23 22:00:51 IST 2020, Humidity : 56.165, Condition : Normal
+Record recieved at : Wed Sep 23 22:00:54 IST 2020, Temperature : 19.326, Condition : Normal
+Record recieved at : Wed Sep 23 22:00:56 IST 2020, Humidity : 62.327, Condition : Normal
+Record recieved at : Wed Sep 23 22:00:59 IST 2020, Temperature : 48.563, Condition : ERROR!
+Record recieved at : Wed Sep 23 22:01:01 IST 2020, Humidity : 0.171, Condition : WARNING!
+Record recieved at : Wed Sep 23 22:01:04 IST 2020, Temperature : 43.527, Condition : ERROR!
+Record recieved at : Wed Sep 23 22:01:06 IST 2020, Humidity : 87.39, Condition : WARNING!
+Record recieved at : Wed Sep 23 22:01:09 IST 2020, Temperature : 47.041, Condition : ERROR!
+Record recieved at : Wed Sep 23 22:01:11 IST 2020, Humidity : 0.117, Condition : WARNING!
+Record recieved at : Wed Sep 23 22:01:14 IST 2020, Temperature : 20.019, Condition : Normal
+Record recieved at : Wed Sep 23 22:01:16 IST 2020, Humidity : 68.643, Condition : Normal
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
