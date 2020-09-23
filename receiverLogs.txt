@@ -34,3 +34,91 @@ Record recieved at : Wed Sep 23 18:33:12 IST 2020, Humidity : 32.628, Condition 
 Record recieved at : Wed Sep 23 18:33:14 IST 2020, Temperature : 3.373, Condition : ERROR!
 Record recieved at : Wed Sep 23 18:33:17 IST 2020, Humidity : 20.117, Condition : Normal
 Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Record recieved at : Wed Sep 23 21:25:39 IST 2020, Temperature : 41.433, Condition : ERROR!
+Record recieved at : Wed Sep 23 21:25:41 IST 2020, Humidity : 25.556, Condition : WARNING!
+Record recieved at : Wed Sep 23 21:25:44 IST 2020, Temperature : 45.182, Condition : ERROR!
+Record recieved at : Wed Sep 23 21:25:46 IST 2020, Humidity : 67.688, Condition : Normal
+Record recieved at : Wed Sep 23 21:25:49 IST 2020, Temperature : 25.057, Condition : Normal
+Record recieved at : Wed Sep 23 21:25:51 IST 2020, Humidity : 45.125, Condition : Normal
+Record recieved at : Wed Sep 23 21:25:54 IST 2020, Temperature : 55.478, Condition : ERROR!
+Record recieved at : Wed Sep 23 21:25:56 IST 2020, Humidity : 113.052, Condition : ERROR!
+Record recieved at : Wed Sep 23 21:25:59 IST 2020, Temperature : 11.123, Condition : Normal
+Record recieved at : Wed Sep 23 21:26:01 IST 2020, Humidity : 25.056, Condition : WARNING!
+Record recieved at : Wed Sep 23 21:26:04 IST 2020, Temperature : 58.257, Condition : ERROR!
+Record recieved at : Wed Sep 23 21:26:06 IST 2020, Humidity : 67.298, Condition : Normal
+Record recieved at : Wed Sep 23 21:26:09 IST 2020, Temperature : 50.944, Condition : ERROR!
+Record recieved at : Wed Sep 23 21:26:11 IST 2020, Humidity : 23.169, Condition : WARNING!
+Record recieved at : Wed Sep 23 21:26:14 IST 2020, Temperature : 54.168, Condition : ERROR!
+Record recieved at : Wed Sep 23 21:26:16 IST 2020, Humidity : 63.585, Condition : Normal
+Record recieved at : Wed Sep 23 21:26:19 IST 2020, Temperature : 57.31, Condition : ERROR!
+Record recieved at : Wed Sep 23 21:26:21 IST 2020, Humidity : 78.482, Condition : WARNING!
+Record recieved at : Wed Sep 23 21:26:24 IST 2020, Temperature : 2.89, Condition : WARNING!
+Record recieved at : Wed Sep 23 21:26:26 IST 2020, Humidity : 59.377, Condition : Normal
+Record recieved at : Wed Sep 23 21:26:29 IST 2020, Temperature : 5.753, Condition : Normal
+Record recieved at : Wed Sep 23 21:26:31 IST 2020, Humidity : 111.524, Condition : ERROR!
+Record recieved at : Wed Sep 23 21:26:34 IST 2020, Temperature : 1.44, Condition : WARNING!
+Record recieved at : Wed Sep 23 21:26:36 IST 2020, Humidity : 13.021, Condition : WARNING!
+Record recieved at : Wed Sep 23 21:26:39 IST 2020, Temperature : 11.799, Condition : Normal
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Record recieved at : Wed Sep 23 21:27:10 IST 2020, Temperature : 5.986, Condition : Normal
+Record recieved at : Wed Sep 23 21:27:13 IST 2020, Humidity : 23.757, Condition : WARNING!
+Record recieved at : Wed Sep 23 21:27:16 IST 2020, Temperature : 14.938, Condition : Normal
+Record recieved at : Wed Sep 23 21:27:18 IST 2020, Humidity : 112.175, Condition : ERROR!
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.
+Waiting for sender to send data.

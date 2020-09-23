@@ -62,10 +62,8 @@ public class MonitorEnvironmentCondition {
 		fileValidate = new FileValidator(filePath, contentType);
 		while(true)
 		{
-			if (fileValidate.fileExists() && !fileValidate.checkFormat()) {
-				environmentConditionLogger.logger(fileFormatErrorMessage);
+			if(validateFile())
 				return;
-			}			
 			sleep(milliseconds); 
 			generateRecord();
 			addRecordToInputFile.invokeAppendOperationToFile(record);
@@ -74,6 +72,14 @@ public class MonitorEnvironmentCondition {
 				
 			
 		}
+	}
+	
+	private boolean validateFile() {
+		if (fileValidate.fileExists() && !fileValidate.checkFormat()) {
+			environmentConditionLogger.logger(fileFormatErrorMessage);
+			return true;
+		}		
+		return false;
 	}
 	
 	private void generateRecord() {

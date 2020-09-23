@@ -14,7 +14,6 @@ public class TriggerAlarm implements ITriggerAlarm {
 	private final String emailAddress = LogMessageConstants.EMAIL_ADDRESS.get();
 	private final String sms = LogMessageConstants.SMS_NUMBER.get();
 	private final String temperatureParamName = StringConstants.TEMPERATURE.get();
-	private final String humidityParamName = StringConstants.HUMIDITY.get();
 	private final String receiverLogsPath = StringConstants.RECEIVERLOGSPATH.get();
 	private final String recievedWarningMessage = LogMessageConstants.WARNING.get();
 	private final String recievedErrorMessage = LogMessageConstants.ERROR.get();
@@ -30,10 +29,14 @@ public class TriggerAlarm implements ITriggerAlarm {
 	@Override
 	public void trigger(String parameterName, Double value) {
 		environmentConditionLogger = new Logger(receiverLogsPath);
-		if (isError(parameterName, value))
+		if (isError(parameterName, value)) {
+			sendAlerts(parameterName, value, emailAlertErrorMessage, smsAlertErrorMessage);
 			environmentConditionLogger.logger(String.format(recievedErrorMessage, new Date().toString(), parameterName, value));
-		else
+		}
+		else {
+			sendAlerts(parameterName, value, emailAlertWarningMessage, smsAlertWarningMessage);
 			environmentConditionLogger.logger(String.format(recievedWarningMessage, new Date().toString(), parameterName, value));
+		}
 	}
 	
 	/**
@@ -43,13 +46,18 @@ public class TriggerAlarm implements ITriggerAlarm {
 	
 	@Override
 	public boolean isError(String parameterName, Double value) {
-		if ( (parameterName.equals(temperatureParamName) && (value < temperatureErrorLow || value > temperatureErrorHigh)) ||
-			 (parameterName.equals(humidityParamName) && (value < humidityErrorLow || value > humidityErrorHigh)) ) {
-			sendAlerts(parameterName, value, emailAlertErrorMessage, smsAlertErrorMessage);
-			return true;
+		if ( isParameterName(parameterName) ) {
+			return checkForError(value, temperatureErrorLow, temperatureErrorHigh);
 		}
-		sendAlerts(parameterName, value, emailAlertWarningMessage, smsAlertWarningMessage);
-		return false;
+		return checkForError(value, humidityErrorLow, humidityErrorHigh);
+	}
+	
+	public boolean isParameterName(String parameterName) {
+		return parameterName.equals(temperatureParamName) ? true : false;
+	}
+	
+	public boolean checkForError(Double value, Double low, Double high ) {
+		return (value < low || value > high);
 	}
 	
 	public void sendAlerts(String parameterName, Double value, String emailMessage, String smsMessage) {
