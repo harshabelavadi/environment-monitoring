@@ -16,7 +16,7 @@ public class FactorValidator implements IFactorValidator {
 	private final String temperatureParamName = StringConstants.TEMPERATURE.get();
 	private final String humidityParamName = StringConstants.HUMIDITY.get();
 	
-	private ILogger environmentConditionLogger;
+	private ILogger environmentConditionLogger = new Logger(receiverLogsPath);;
 	private final Double temperatureWarnLow = FactorConstants.TEMPERATURE_WARNLOW.get();
 	private final Double temperatureWarnHigh = FactorConstants.TEMPERATURE_WARNHIGH.get();
 	
@@ -26,7 +26,6 @@ public class FactorValidator implements IFactorValidator {
 
 	@Override
 	public boolean isParameterInRange(String parameterName, Double value) {
-		environmentConditionLogger = new Logger(receiverLogsPath);
 		if (parameterName.equals(temperatureParamName))
 			return isTemperatureInRange(value); //this is a boolean but why is it returning value
 		return isHumidityInRange(value);

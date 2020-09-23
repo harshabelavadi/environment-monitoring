@@ -78,14 +78,13 @@ public class ReceiverReadData {
 		}
 	}
 	
-	private boolean isWaitLimitExceeded()
+	private void isWaitLimitExceeded()
 	{
 		if (waitLimit >= NumberConstants.TIMEOUT.get()) {
 			System.out.println(LogMessageConstants.TIMEOUT.get());
 			fileOperations.closeReader(reader);
-			return true;
+			System.exit(0);
 		}
-		return false;
 	}
 	
 	private void waitForData(BufferedReader reader) {
@@ -95,8 +94,8 @@ public class ReceiverReadData {
 				sleep(receiverWait);
 				setReceivedData(reader.readLine());
 				setWaitLimit(waitLimit + receiverWait);
-				if(isWaitLimitExceeded())
-					System.exit(0);
+				isWaitLimitExceeded();
+					
 			}
 		} catch (IOException exception) {
 			exception.printStackTrace();
