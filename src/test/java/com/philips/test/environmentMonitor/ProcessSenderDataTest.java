@@ -21,9 +21,7 @@ public class ProcessSenderDataTest {
 	
 	
 	@Test
-	public void isParameterInRange() {
-		
-		
+	public void isParameterInRange() {		
 		assertEquals(testObj.isParameterInRange(humidityParamName, 25.36),true);
 		assertEquals(testObj.isParameterInRange(temperatureParamName, 5.36),false);
 		assertEquals(testObj.isParameterInRange(humidityParamName, 2.36),false);

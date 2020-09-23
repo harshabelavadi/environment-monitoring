@@ -1,0 +1,8 @@
+Record generated at : Wed Sep 23 18:08:06 IST 2020 Temperature : 3.787, Humidity : 17.987
+Record generated at : Wed Sep 23 18:08:11 IST 2020 Temperature : 39.276, Humidity : 21.512
+Record generated at : Wed Sep 23 18:08:16 IST 2020 Temperature : 58.233, Humidity : 30.482
+Record generated at : Wed Sep 23 18:08:21 IST 2020 Temperature : 56.876, Humidity : 19.827
+Record generated at : Wed Sep 23 18:08:26 IST 2020 Temperature : 45.397, Humidity : 36.877
+Record generated at : Wed Sep 23 18:08:31 IST 2020 Temperature : 38.079, Humidity : 31.553
+Record generated at : Wed Sep 23 18:08:36 IST 2020 Temperature : 32.704, Humidity : 11.715
+Record generated at : Wed Sep 23 18:08:41 IST 2020 Temperature : 54.812, Humidity : 18.36
