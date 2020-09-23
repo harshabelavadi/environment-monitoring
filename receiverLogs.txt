@@ -1,1 +1,36 @@
 Record recieved at : Wed Sep 23 18:19:04 IST 2020, Humidity : 25.36, Condition : Normal
+Record recieved at : Wed Sep 23 18:31:18 IST 2020, Humidity : 25.36, Condition : Normal
+Record recieved at : Wed Sep 23 18:31:33 IST 2020, Humidity : 25.36, Condition : Normal
+Waiting for sender to send data.
+Waiting for sender to send data.
+Record recieved at : Wed Sep 23 18:32:04 IST 2020, Temperature : 33.716, Condition : Normal
+Record recieved at : Wed Sep 23 18:32:07 IST 2020, Humidity : 39.273, Condition : WARNING!
+Record recieved at : Wed Sep 23 18:32:09 IST 2020, Temperature : 53.22, Condition : ERROR!
+Record recieved at : Wed Sep 23 18:32:12 IST 2020, Humidity : 15.789, Condition : Normal
+Record recieved at : Wed Sep 23 18:32:14 IST 2020, Temperature : 9.069, Condition : Normal
+Record recieved at : Wed Sep 23 18:32:17 IST 2020, Humidity : 16.356, Condition : Normal
+Record recieved at : Wed Sep 23 18:32:19 IST 2020, Temperature : 22.116, Condition : Normal
+Record recieved at : Wed Sep 23 18:32:22 IST 2020, Humidity : 17.789, Condition : Normal
+Record recieved at : Wed Sep 23 18:32:24 IST 2020, Temperature : 34.683, Condition : Normal
+Record recieved at : Wed Sep 23 18:32:27 IST 2020, Humidity : 35.979, Condition : WARNING!
+Record recieved at : Wed Sep 23 18:32:29 IST 2020, Temperature : 46.427, Condition : WARNING!
+Record recieved at : Wed Sep 23 18:32:32 IST 2020, Humidity : 39.053, Condition : WARNING!
+Record recieved at : Wed Sep 23 18:32:34 IST 2020, Temperature : 52.303, Condition : ERROR!
+Record recieved at : Wed Sep 23 18:32:37 IST 2020, Humidity : 35.868, Condition : WARNING!
+Record recieved at : Wed Sep 23 18:32:39 IST 2020, Temperature : 46.062, Condition : WARNING!
+Record recieved at : Wed Sep 23 18:32:42 IST 2020, Humidity : 39.858, Condition : WARNING!
+Record recieved at : Wed Sep 23 18:32:44 IST 2020, Temperature : 29.394, Condition : Normal
+Record recieved at : Wed Sep 23 18:32:47 IST 2020, Humidity : 39.534, Condition : WARNING!
+Record recieved at : Wed Sep 23 18:32:49 IST 2020, Temperature : 13.878, Condition : Normal
+Record recieved at : Wed Sep 23 18:32:52 IST 2020, Humidity : 23.015, Condition : Normal
+Record recieved at : Wed Sep 23 18:32:54 IST 2020, Temperature : 40.017, Condition : Normal
+Record recieved at : Wed Sep 23 18:32:57 IST 2020, Humidity : 26.301, Condition : Normal
+Record recieved at : Wed Sep 23 18:32:59 IST 2020, Temperature : 5.542, Condition : WARNING!
+Record recieved at : Wed Sep 23 18:33:02 IST 2020, Humidity : 34.022, Condition : Normal
+Record recieved at : Wed Sep 23 18:33:04 IST 2020, Temperature : 45.246, Condition : WARNING!
+Record recieved at : Wed Sep 23 18:33:07 IST 2020, Humidity : 38.329, Condition : WARNING!
+Record recieved at : Wed Sep 23 18:33:09 IST 2020, Temperature : 9.871, Condition : Normal
+Record recieved at : Wed Sep 23 18:33:12 IST 2020, Humidity : 32.628, Condition : Normal
+Record recieved at : Wed Sep 23 18:33:14 IST 2020, Temperature : 3.373, Condition : ERROR!
+Record recieved at : Wed Sep 23 18:33:17 IST 2020, Humidity : 20.117, Condition : Normal
+Waiting for sender to send data.
