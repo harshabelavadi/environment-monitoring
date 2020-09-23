@@ -52,8 +52,7 @@ public class ReceiverReadData {
 			
 			while (reader!=null) {
 				setWaitLimit(NumberConstants.ZERO.get());
-				if(waitForData(reader))
-					return;
+				waitForData(reader);
 				processData.processFileData(receivedData);
 				sleep(receiverWait);
 				setReceivedData(reader.readLine());
@@ -89,7 +88,7 @@ public class ReceiverReadData {
 		return false;
 	}
 	
-	private boolean waitForData(BufferedReader reader) {
+	private void waitForData(BufferedReader reader) {
 		try {
 			while (receivedData == null) {
 				receiverLogger.logger(waitingForSender);
@@ -97,12 +96,11 @@ public class ReceiverReadData {
 				setReceivedData(reader.readLine());
 				setWaitLimit(waitLimit + receiverWait);
 				if(isWaitLimitExceeded())
-					return true;
+					System.exit(0);
 			}
 		} catch (IOException exception) {
 			exception.printStackTrace();
 		}
-		return false;
 	}
 	
 	private void setReceivedData(String receivedData) {
