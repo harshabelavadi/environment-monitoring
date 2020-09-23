@@ -1,0 +1,1 @@
+Record recieved at : Wed Sep 23 18:19:04 IST 2020, Humidity : 25.36, Condition : Normal
